@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--CS 290 Week 1-->
+<!--Author: David Rider-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CS 290 Week 1</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		<table>
+			<caption>Simple Words in European Languages</caption>
+			<thead>
+				<tr>
+					<th></th>
+					<th>German</th>
+					<th>Dutch</th>
+					<th>French</th>
+					<th>Spanish</th>
+					<th>Italian</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Hello</th>
+					<td>Hallo</td>
+					<td>Hallo</td>
+					<td>Bonjour</td>
+					<td>Hola</td>
+					<td>Ciao</td>
+				</tr>
+				<tr>
+					<th>Goodbye</th>
+					<td>Auf Wiedersehen</td>
+					<td>Vaarwel</td>
+					<td>Au revoir</td>
+					<td>Adios</td>
+					<td>Addio</td>
+				</tr>
+				<tr>
+					<th>Man</th>
+					<td>Mann</td>
+					<td>Man</td>
+					<td>Homme</td>
+					<td>Hombre</td>
+					<td>Uomo</td>
+				</tr>
+				<tr>
+					<th>Woman</th>
+					<td>Frau</td>
+					<td>Vrouw</td>
+					<td>Femme</td>
+					<td>Mujer</td>
+					<td>Donna</td>
+				</tr>
+				<tr>
+					<th>Water</th>
+					<td>Wasser</td>
+					<td>Water</td>
+					<td>Eau</td>
+					<td>Aqua</td>
+					<td>Acqua</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">Footer 1</td>
+					<td colspan="4">Footer 2</td>
+				</tr>
+			</tfoot>
+		</table>
+		<dl>
+			<dt>1st</dt>
+			<dd>first<dd>
+			<dt>2nd</dt>
+			<dd>second<dd>
+			<dt>3rd</dt>
+			<dd>third<dd>
+		</dl>
+		<div class="outer-content">
+			<div class="inner-content">Text here.</div>
+		</div>
+		<!--form #1-->
+		<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+			<fieldset>
+				<legend>Get Form</legend>
+				<label>Text input:
+					<input type="text" name="text_input"> 
+				</label></br>
+				<label>Numerical Input:
+					<input type="number" name="numerical_input">
+				</label></br>
+				<label>Password:
+					<input type="password" name="password_input">
+				</label></br>
+				<h5>Please choose:</h5>
+				<input type="radio" name="candy" value="Snickers"> Snickers<br>
+				<input type="radio" name="candy" value="Skittles"> Skittles<br>
+				<input type="radio" name="candy" value="Mentos"> Mentos<br>
+				<input type="submit">
+			</fieldset>
+		</form>
+		<!--form #2-->
+		<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+			<fieldset>
+				<legend>Post Form</legend>
+				<label>Text input:
+					<input type="text" name="text_input"> 
+				</label></br>
+				<label>Numerical Input:
+					<input type="number" name="numerical_input">
+				</label></br>
+				<label>Password:
+					<input type="password" name="password_input">
+				</label></br>
+				<h5>Please choose:</h5>
+				<input type="radio" name="candy" value="Snickers"> Snickers<br>
+				<input type="radio" name="candy" value="Skittles"> Skittles<br>
+				<input type="radio" name="candy" value="Mentos"> Mentos<br>
+				<input type="submit">
+			</fieldset>
+		</form>
+	</body>
+</html>
