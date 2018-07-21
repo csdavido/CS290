@@ -1,0 +1,54 @@
+<!--
+CS 290, Week 4: Ajax Interactions
+ajax.html
+Author: David Rider
+July 18, 2018
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+  		<title>Unicode Script</title>
+ 	</head>
+ 	<body>
+  	<script src="ajax.js"></script>
+  		<!--GET FORM-->
+  		<!--Connects to Open Weather Map-->
+  		<!--Lets a user input city/zip and asyncronously 
+  		shows the weather information from OWM vie GET-->
+ 		<form>
+ 			<fieldset>
+ 				<legend>Zip Code</legend>
+ 					<label for="zipcode"</label>
+ 					<input type="text" name="zipcode" id="zipcode">
+ 					<input type="submit" id="zSubmit">
+ 				<legend>City</legend>
+ 					<label for="city"</label>
+ 					<input type="text" name="city" id="city">
+ 					<input type="submit" id="cSubmit">
+ 			</fieldset>	
+ 		<!--POST FORM-->
+  		<!--Submits asynchronously and sends a content-type of JSONT-->
+ 		</form>
+ 			<fieldset>
+ 				<legend>Post to HTTP Bin</legend>
+ 					<label for="httpbin"></label>
+ 					<input type="text" name="city" id="httpbin">
+ 					<input type="submit" id="hSubmit">
+ 			</fieldset>		
+ 		</form>
+ 		<!--Displaying data-->
+ 		<div>
+ 			<h2>Current Weather</h2>
+ 			<ul>
+ 				<li><span>City: </span><span id="cityResult"></span></li>
+ 				<li><span>Temperature(F): </span><span id="tempResult"></span></li>
+ 				<li><span>Wind Speed(mph): </span><span id="windResult"></span></li>
+ 				<li><span>Humidity(%): </span><span id="humResult"></span></li>
+ 		</div>
+ 		<div>
+ 			<h2>HTTP Bin Result</h2>
+ 			<span>Result: </span><span id="httpResult"></span>
+ 		</div>
+ 	</body>
+</html>
