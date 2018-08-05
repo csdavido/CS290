@@ -1,0 +1,99 @@
+<!-- 
+Author: David Rider
+OSU CS 290
+Summer 2018
+July 31, 2018
+home.html
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="home" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="stylesheet.css">
+		<title>CS 290 Project Home</title>
+	</head>
+	<body> 
+		<!--navigation bar-->
+		<!--citation: https://www.w3schools.com/css/css_navbar.asp -->
+	    <div class="navigation-bar">
+  			<ul>
+	  			<li><a href="home.html">Home</a></li>
+	  			<li><a href="about.html">About</a></li>
+	  			<li><a href="resume.html">Resume</a></li>
+	  			<li><a href="links.html">Links</a></li>
+  			</ul>
+   		</div>
+		<br>
+		<!--homepage welcome message-->
+		<div class="welcome">
+	    	<h1>Welcome to my OSU CS 290 Final Project website. Hopefully this website meets all the project requirements!</h1>
+	  	</div>
+		<!--picture slideshow-->
+		<!--citation: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+		<div class="slideshow-container">
+			<!--slideshow picture 1-->
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="img1.jpg" alt="waves" style="width:100%">
+				<div class="text">Photo credit Chris Luczkow</div>
+			</div>
+			<!--slideshow picture 2-->
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="img2.jpg" alt="New York City" style="width:100%">
+				<div class="text">Photo credit Aurelien Guichard</div>
+			</div>
+			<!--slideshow picture 3-->
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="img3.jpg" alt="JavaScript code on a laptop" style="width:100%">
+				<div class="text">Photo credit Christiaan Colen</div>
+			</div>
+			<!--next and previous buttons for slideshow -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		<!--slide show position dots-->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+	  	<!-- JavaScript for picture slideshow-->
+  		<!-- citation: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+		<script>
+			var slideIndex = 0;
+		  	var slides = document.getElementsByClassName("mySlides");
+
+		  	showSlides();
+			//display slides
+		  	function showSlides() {    
+		    var i;    
+		    for (i = 0; i < slides.length; i++) {
+		        slides[i].style.display = "none"; 
+		    }
+		    slideIndex++;
+		    if (slideIndex> slides.length) {slideIndex = 1} 
+		    	slides[slideIndex-1].style.display = "block"; 
+		    	setTimeout(showSlides, 4000);
+		  	}
+		  	//manage current slide
+		  	function currentSlide(no) {
+		    	var i;    
+		    	for (i = 0; i < slides.length; i++) {
+		        	slides[i].style.display = "none"; 
+		    	}
+		    	slideIndex = no;
+		    	slides[no-1].style.display = "block";
+		  	}
+		  	//manually change slide
+			function plusSlides(n) {
+			    var newslideIndex = slideIndex + n;
+				if(newslideIndex < 4 && newslideIndex > 0){
+			    	currentSlide(newslideIndex);
+			  	}
+			}
+		</script>
+	</body>
+</html>

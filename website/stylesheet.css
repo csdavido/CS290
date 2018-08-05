@@ -1,0 +1,228 @@
+/********************
+Author: David Rider
+OSU CS 290
+Summer 2018
+July 31, 2018
+stylesheet.css
+*********************/
+/***** Menu bar *****/
+.navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation-bar li {
+    float: left;
+}
+
+.navigation-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+
+.navigation-bar li a:hover {
+    background-color: #111;
+}
+
+/**********************/
+/***** Home Page *****/
+.welcome h1 {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/***** Picture Slideshow *****/
+/*citation: https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+* {box-sizing: border-box}
+.mySlides {display: none}
+.slideshow-container img {vertical-align: middle;}
+
+/***** Slideshow Container *****/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/***** Previous and Next buttons *****/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/***** Next button positioning *****/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/***** Previous and Next buttons hover effect *****/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/***** Slideshow captions *****/
+.text {
+  color: #f2f2f2;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/***** Numerical position indicator *****/
+.numbertext {
+font-family: Verdana, sans-serif;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/***** Dot position indicator *****/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/***** Fade animation *****/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+/***** Small screen resizing *****/
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/**********************/
+
+/***** About Page *****/
+.about img {
+  float: left;
+  margin-right: 20px;
+  width: 150px;
+  height: 150px;
+}
+.about h1 {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+}
+.about h5 {
+  max-width: 1000px;
+  text-align: justify;
+  color: black;
+  text-decoration: none;
+  font-family: Verdana, serif;
+  font-size: 14px;
+}
+/**********************/
+
+/***** Resume Page *****/
+.resume h1 {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+}
+.resume h4 {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+}
+.button {
+  text-align: center;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: RoyalBlue;
+}
+/**********************/
+/***** Links Page *****/
+.links h3 {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+}
+.links ul {
+  text-align: left;
+  list-style-position: inside;
+  color: black;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+}
+
+.scroll {
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  margin: auto;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 195px;
+  width: 200px;
+  overflow: scroll;
+}
+/**********************/
